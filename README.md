@@ -19,3 +19,7 @@ It is tested on the macbook M3 pro and intel processors
 ### Intel I7-1260p
 
 ![Alt Text](intel-i712.png)
+
+
+####Special thanks to the 
+[alexdedyura](https://github.com/alexdedyura)
