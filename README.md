@@ -21,5 +21,5 @@ It is tested on the macbook M3 pro and intel processors
 ![Alt Text](intel-i712.png)
 
 
-####Special thanks to the 
+### Special Thanks
 [alexdedyura](https://github.com/alexdedyura)
