@@ -11,12 +11,6 @@ os_version = platform.system()
 pi = math.pi
 
 
-print('Python CPU Benchmark for  (Windows, macOS, Linux)')
-print('CPU: ' + cpuinfo.get_cpu_info().get('brand_raw', "Unknown"))
-print('Arch: ' + cpuinfo.get_cpu_info().get('arch_string_raw', "Unknown"))
-print('OS: ' + str(os_version))
-
-print('\nBenchmarking: \n')
 
 def stress_test(args):
     cpu, stress_value = args
@@ -39,6 +33,11 @@ def stress_test(args):
 
 if __name__ == '__main__':
     start_time = datetime.now()
+    print('Python CPU Benchmark for  (Windows, macOS, Linux)')
+    print('CPU: ' + cpuinfo.get_cpu_info().get('brand_raw', "Unknown"))
+    print('Arch: ' + cpuinfo.get_cpu_info().get('arch_string_raw', "Unknown"))
+    print('OS: ' + str(os_version))
+    print('\nBenchmarking: \n')
     cpu_count = cpu_count()
     ### Per CPU how much calculations it can calcualte
     with Pool(cpu_count) as mp_pool:
